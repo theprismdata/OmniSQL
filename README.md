@@ -10,6 +10,8 @@ Based on this framework, we introduce the first million-scale text-to-SQL datase
 
 Building on SynSQL-2.5M, we introduce **OmniSQL**, a family of powerful text-to-SQL models available in three sizes: **7B, 14B, and 32B**. During the fine-tuning process, we also integrate training sets from Spider and BIRD, which provide high-quality, human-labeled data.
 
+*(The paper and code will be released within a few days, so stay tuned!)*
+
 ## Downloads
 | **Model and Dataset** | **Download Latest** |
 |-----------|------------------|

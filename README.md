@@ -10,17 +10,33 @@ Based on this framework, we introduce the first million-scale text-to-SQL datase
 
 Building on SynSQL-2.5M, we introduce **OmniSQL**, a family of powerful text-to-SQL models available in three sizes: **7B, 14B, and 32B**. During the fine-tuning process, we also integrate training sets from Spider and BIRD, which provide high-quality, human-labeled data.
 
-*(The paper and code will be released within a few days, so stay tuned!)*
+**Paper Link:** [https://arxiv.org/abs/2503.02240](https://arxiv.org/abs/2503.02240)
+
+**GitHub Link:** [https://github.com/RUCKBReasoning/OmniSQL](https://github.com/RUCKBReasoning/OmniSQL)
+
+*(The code will be released within a few days, so stay tuned!)*
 
 ## Downloads
 | **Model and Dataset** | **Download Latest** |
 |-----------|------------------|
-| SynSQL-2.5M | [✨ Modelscope](https://www.modelscope.cn/datasets/seeklhy/SynSQL-2.5M/summary), [🤗 HuggingFace (coming soon)](https://www.modelscope.cn/datasets/seeklhy/SynSQL-2.5M/summary) |
-| OmniSQL-7B  | [✨ Modelscope](https://modelscope.cn/models/seeklhy/OmniSQL-7B), [🤗 HuggingFace (coming soon)](https://modelscope.cn/models/seeklhy/OmniSQL-7B) |
-| OmniSQL-14B | [✨ Modelscope](https://modelscope.cn/models/seeklhy/OmniSQL-14B), [🤗 HuggingFace (coming soon)](https://modelscope.cn/models/seeklhy/OmniSQL-14B) |
-| OmniSQL-32B | [✨ Modelscope](https://modelscope.cn/models/seeklhy/OmniSQL-32B), [🤗 HuggingFace (coming soon)](https://modelscope.cn/models/seeklhy/OmniSQL-32B) |
+| SynSQL-2.5M | [✨ Modelscope](https://www.modelscope.cn/datasets/seeklhy/SynSQL-2.5M/summary), [🤗 HuggingFace](https://huggingface.co/datasets/seeklhy/SynSQL-2.5M) |
+| OmniSQL-7B  | [✨ Modelscope](https://modelscope.cn/models/seeklhy/OmniSQL-7B), [🤗 HuggingFace](https://huggingface.co/seeklhy/OmniSQL-7B) |
+| OmniSQL-14B | [✨ Modelscope](https://modelscope.cn/models/seeklhy/OmniSQL-14B), [🤗 HuggingFace](https://huggingface.co/seeklhy/OmniSQL-14B) |
+| OmniSQL-32B | [✨ Modelscope](https://modelscope.cn/models/seeklhy/OmniSQL-32B), [🤗 HuggingFace](https://huggingface.co/seeklhy/OmniSQL-32B) |
 
-## Performance
+## Statistics about SynSQL-2.5M
+SynSQL-2.5M is a high-quality synthetic text-to-SQL dataset, generated entirely using open-source LLMs and released under Apache 2.0.
+
+The dataset includes:
+- 2,544,390 diverse and complex text-to-SQL samples, each consisting of a `<database, question, SQL query, chain-of-thought solution>` quad.
+- Coverage of 16,583 synthetic databases from realistic scenarios.
+- A wide range of SQL complexity levels: `simple, moderate, complex, highly complex`, from single-table queries to advanced multi-table joins, functions, and common table expressions.
+- A variety of linguistic styles in natural language questions: `formal, colloquial, imperative, interrogative, descriptive, concise, vague, metaphorical, and conversational`.
+- Chain-of-thought (CoT) solutions provided for all data samples.
+
+For more statistics and quality evaluations, refer to our paper. As of March 2025, SynSQL-2.5M is the largest and most diverse synthetic text-to-SQL dataset to date. It represents a significant milestone in the text-to-SQL community. We encourage researchers, practitioners, and data enthusiasts to explore and build models using this dataset. *If you find it useful, please consider giving us a star or citing our work. Your feedback is our greatest motivation to continue advancing.*
+
+## Performance Evaluation
 We evaluate OmniSQL on a wide range of datasets, including standard benchmarks (Spider and BIRD), challenging domain-specific benchmarks (Spider2.0-SQLite, ScienceBenchmark, EHRSQL), and three robustness benchmarks (Spider-DK, Spider-Syn, Spider-Realistic). The evaluation results are shown below:
 <p align="center">
   <img src="assets/main_results.png" alt="Description" style="width: 100%; max-width: 800px;"/>

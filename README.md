@@ -14,7 +14,7 @@ Building on SynSQL-2.5M, we introduce **OmniSQL**, a family of powerful text-to-
 
 **GitHub Link:** [https://github.com/RUCKBReasoning/OmniSQL](https://github.com/RUCKBReasoning/OmniSQL)
 
-`Update (2025.3.11):` We have upload the training and evaluation scripts in `train_and_evaluate`, you can easily reproduce our evaluation results.
+`Update (2025.3.11):` We have uploaded the training and evaluation scripts in the `train_and_evaluate` folder. You can easily go ahead and reproduce our evaluation results.
 
 *(The code will be released within a few days, so stay tuned!)*
 

@@ -13,7 +13,7 @@ All experiments were conducted using:
 ### Download
 Download the datasets from:
 - [ModelScope-OmniSQL-datasets](https://modelscope.cn/datasets/seeklhy/OmniSQL-datasets/summary)
-- [HuggingFace-OmniSQL-datasets (coming soon)](https://modelscope.cn/datasets/seeklhy/OmniSQL-datasets/summary)
+- [HuggingFace-OmniSQL-datasets](https://huggingface.co/datasets/seeklhy/OmniSQL-datasets)
 
 The datasets include BIRD, Spider, ScienceBenchmark, EHRSQL, Spider2-SQLite, Spider-DK, Spider-Realistic, Spider-Syn, and SynSQL-2.5M. Unzip `data.zip` in this folder.
 

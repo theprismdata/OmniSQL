@@ -1,4 +1,4 @@
-# Stylized Natural Language Question Synthesis
+# Chain-of-Thought Solution Synthesis
 
 This is the final step in our data synthesis framework, focused on generating step-by-step chain-of-thought (CoT) solutions for `<database, question, SQL query>` triplets.
 
